@@ -14,7 +14,7 @@ import jinja2
 LOG = logging.getLogger('puppetdb_stencil')
 
 METAPARAMS = ('require', 'before', 'subscribe', 'notify', 'audit', 'loglevel',
-              'noop', 'schedule', 'stage', 'alias', 'tag')
+              'ensure', 'noop', 'schedule', 'stage', 'alias', 'tag', 'target')
 
 # Allow templates from anywhere on the filesystem
 LOADER = jinja2.FileSystemLoader(['.', '/'])
