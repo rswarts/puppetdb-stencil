@@ -14,6 +14,12 @@ A more complex example that renders multiple types through a shared template:
 
    $ python puppetdb_stencil.py nagios_host nagios_hostgroup -t examples/nagios_.jinja2
 
+An example where filtering where (optional) tags are used:
+
+.. code-block:: bash
+
+   $ python puppetdb_stencil.py nagios_host nagios_hostgroup -t examples/nagios_.jinja2 -g datacenter-new-york datacenter-amsterdam
+
 Template selection
 ------------------
 
